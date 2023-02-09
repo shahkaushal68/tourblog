@@ -14,6 +14,7 @@ app.use(cookieParser());
 app.use(express.json()); // for postman //Used to parse JSON bodies
 app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 app.use(express.urlencoded({ extended: false })); //for send the data via form //Parse URL-encoded bodies
+
 const port = process.env.PORT || 4000;
 
 //DB Connection
