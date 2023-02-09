@@ -1,0 +1,177 @@
+.form-outline .form-control {
+  border: 1px solid;
+}
+.form-section{
+  margin-top: 50px;
+}
+.addEditForm {
+  box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.tags-input {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 48px;
+  width: 100%;
+  padding: 0 8px;
+  border: 1px solid #d6d8da;
+  border-radius: 6px;
+}
+.tags-input:focus-within {
+  border: 1px solid #0052cc;
+}
+.tags-input input {
+  flex: 1;
+  border: none;
+  height: 46px;
+  font-size: 14px;
+  padding: 4px 0 0 0;
+}
+.tags-input input:focus {
+  outline: transparent;
+}
+
+#tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.tag {
+  width: auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 8px;
+  font-size: 14px;
+  list-style: none;
+  border-radius: 6px;
+  margin: 0 8px 8px 0;
+  background: #0052cc;
+}
+.tag .tag-title {
+  margin-top: 3px;
+}
+.tag .tag-close-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 8px;
+  color: #0052cc;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+ul.tags-listing{
+  padding: 0;
+  display: flex;
+  gap:7px;
+  margin-bottom: 0;
+}
+ul.tags-listing li{
+  list-style-type: none;
+}
+
+
+.product-image {
+  float: left;
+  width: 20%;
+}
+
+.product-details {
+  float: left;
+  width: 37%;
+}
+
+.product-price {
+  float: left;
+  width: 12%;
+}
+
+.product-quantity {
+  float: left;
+  width: 10%;
+}
+
+.product-removal {
+  float: left;
+  width: 9%;
+}
+
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+
+
+
+
+
+.clear{
+  clear:both
+}
+
+.shopping-cart {
+  margin-top: 20px;
+}
+/* Product entries */
+.product {
+  margin: 20px 0;
+  padding-bottom: 10px;
+  box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+}
+.product .product-image {
+  text-align: center;
+}
+.product .product-image img {
+  width: 100px;
+}
+.product .product-details .product-title {
+  margin-right: 20px;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+.product .product-details .product-description {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+}
+.product .product-quantity input {
+  width: 40px;
+}
+.product .remove-product {
+  border: 0;
+  padding: 4px 8px;
+  background-color: #c66;
+  color: #fff;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  font-size: 12px;
+  border-radius: 3px;
+}
+.product .remove-product:hover {
+  background-color: #a44;
+}
+
+.author-section {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background: #000;
+  padding: 5px;
+  color: #fff;
+}
+
+
+.icon-section {
+  display: flex;
+  gap: 5px;
+}
