@@ -2,8 +2,12 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 //import { login } from "./authServices";
+const dotenv = process.env.NODE_ENV !== "production";
 
-const base_url = process.env.REACT_APP_BASE_URL;
+const { REACT_APP_BASE_URL, REACT_PROD_API } = process.env;
+
+const base_url = dotenv ? REACT_APP_BASE_URL : REACT_PROD_API;
+
 const initialState = {
   user: null,
   isLoading: false,

@@ -70,6 +70,7 @@ const EditTour = () => {
       setTourData(tour);
       setTags(tour.tags);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch, id]);
 
   return (

@@ -1,7 +1,11 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const base_url = process.env.REACT_APP_BASE_URL;
+const dotenv = process.env.NODE_ENV !== "production";
+
+const { REACT_APP_BASE_URL, REACT_PROD_API } = process.env;
+
+const base_url = dotenv ? REACT_APP_BASE_URL : REACT_PROD_API;
 //const user = JSON.parse(localStorage.getItem("user"));
 //console.log("token", user?.token);
 
